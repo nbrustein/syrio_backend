@@ -52,4 +52,5 @@ end
 #gem 'hbase_model', :git => 'https://github.com/nbrustein/hbase_model.git'
 #gem 'hbase_model', :path => '../gems/hbase_model'
 gem 'mongo'
-gem 'mongo_mapper'
+gem 'ferret', :path => 'vendor/gems/ferret'
+gem 'ruby-debug-base'
