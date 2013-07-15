@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use jdbcsqlite3 as the database for Active Record
-gem 'activerecord-jdbcsqlite3-adapter'
+#gem 'activerecord-jdbcsqlite3-adapter'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -49,8 +49,12 @@ platforms :jruby do
   end
 end
 
-#gem 'hbase_model', :git => 'https://github.com/nbrustein/hbase_model.git'
-#gem 'hbase_model', :path => '../gems/hbase_model'
 gem 'mongo'
 gem 'ferret', :path => 'vendor/gems/ferret'
-gem 'ruby-debug-base'
+gem 'ferret_users_and_groups', :path => 'vendor/gems/ferret_users_and_groups'
+gem 'syrio_user', :path => 'vendor/gems/syrio_user'
+gem 'active-model-json-schema', :git => 'git://github.com/nbrustein/active-model-json-schema.git'
+gem 'bson_ext'
+gem 'ruby-debug', :platforms => :jruby
+gem 'ruby-debug19', :platforms => :ruby_19
+gem 'byebug',:platforms => :ruby_20

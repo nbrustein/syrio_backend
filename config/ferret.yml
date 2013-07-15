@@ -1,0 +1,18 @@
+defaults: &defaults
+  features: 
+    - Ferret::Features::HasPermissions
+
+local: &local
+  <<: *defaults
+  adapter: mongodb
+  host: localhost
+  port: ~  
+
+development:
+  <<: *local
+  database: ferret_development
+  
+
+production:
+  <<: *local
+  database: ferret_production
