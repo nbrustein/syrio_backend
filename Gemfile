@@ -52,7 +52,6 @@ end
 gem 'mongo'
 gem 'ferret', :path => 'vendor/gems/ferret'
 gem 'ferret_users_and_groups', :path => 'vendor/gems/ferret_users_and_groups'
-gem 'syrio_user', :path => 'vendor/gems/syrio_user'
 gem 'active-model-json-schema', :git => 'git://github.com/nbrustein/active-model-json-schema.git'
 gem 'bson_ext'
 gem 'ruby-debug', :platforms => :jruby
